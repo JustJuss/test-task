@@ -123,7 +123,7 @@ export default {
 
   methods: {
     formatDate(date) {
-      return new Date(date.replace('-', ','))
+      return new Date(date.replace(new RegExp (/ - /), "/"))
     },
 
     normalizeDate(date) {

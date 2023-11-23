@@ -93,8 +93,8 @@ export default {
 
     culcDate(date1, date2) {
       let today = new Date()
-      let finishDate = new Date(date1.replace('-', ','))
-      let beforeDate = new Date(date2.replace('-', ','))
+      let finishDate = new Date(date1.replace(new RegExp (/ - /), "/"))
+      let beforeDate = new Date(date2.replace(new RegExp (/ - /), "/"))
       let finishDays = Math.floor((finishDate - today) / 86400000)
       let beforeDays = Math.floor((beforeDate - today) / 86400000)
       return { finishDays, beforeDays }
