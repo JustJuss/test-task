@@ -1,0 +1,158 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+}
+
+tr p {
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+p::-webkit-scrollbar {
+    width: 5px;
+    background-color: #f9f9fd;
+}
+
+p::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #454545;
+}
+
+p::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.table-container {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-width: inherit;
+    max-height: 90vh;
+}
+
+.table-container::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background-color: #f9f9fd;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #454545;
+}
+
+.table-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+.table__id {
+    width: 20px;
+}
+
+.table__name {
+    min-width: 70px;
+}
+
+.table__diet {
+    min-width: 70px;
+}
+
+.table__tariff {
+    min-width: 70px;
+}
+
+.table__address {
+    min-width: 70px;
+}
+
+.table__phone {
+    min-width: 100px;
+}
+
+.table__date {
+    min-width: 125px;
+}
+
+.table__sum {
+    min-width: 140px;
+}
+
+.table__comment {
+    min-width: 100px;
+}
+
+tr {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table_in_table tr:not(:last-child) {
+    border-bottom: 1px dashed #505050;
+}
+
+.table_in_table {
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    position: relative;
+}
+
+.form-group {
+    margin-right: 32px;
+}
+
+.table__head {
+    position: sticky;
+    top: 0;
+}
+
+.btn-search {
+    margin-right: 32px;
+}
+
+@media (min-width: 992px) {
+    body.body {
+        font-size: 12px;
+    }
+    
+    .table__diet {
+        min-width: 70px;
+    }
+    
+    .table__tariff {
+        min-width: 70px;
+    }
+    
+    .table__address {
+        min-width: 70px;
+    }
+    
+    .table__phone {
+        min-width: 80px;
+    }
+    
+    .table__sum {
+        min-width: 110px;
+    }
+}
